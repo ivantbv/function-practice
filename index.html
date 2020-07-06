@@ -1,0 +1,78 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Writing FUNctions</title>
+    </head>
+    <body style="background-color:  rgba(230, 204, 200, 0.4);">
+       <p style="text-align: center; background-color: rgb(233, 223, 210); font-size: 16px; font-family: monospace;">FUNctions are FUN!</p>
+
+       <ol style="text-align: center; font-size: 16px; font-family: monospace;">
+           <li>
+            Write a function called add7 that takes one number and returns that number + 7. <br>
+            <strong>to activate this function open the console and type add7(), then press enter</strong>
+           </li>
+           <br><hr style="width: 444px;"> <br>
+           <li>
+            Write a function called multiply that takes 2 numbers and returns their product. <br>
+            <strong>to activate this function open the console and type multiply(), then press enter</strong>
+           </li>
+           <br><hr style="width: 444px;"> <br>
+           <li>
+            Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+            <br><strong>to activate this function open the console and type capitalize()</strong>
+           </li>
+           <br><hr style="width: 444px;"> <br>
+           <li>
+            Write a function called lastLetter that takes a string and returns the very last letter of that string: lastLetter("abcd") should return "d"
+            <br> <strong>to activate this function open the console and type lastLetter()</strong>
+           </li>
+       </ol>
+
+        <script>
+            //Take a number and add 7
+
+            let add7 = function(a) {
+                // let add7 = a + 7;
+                // console.log(add7);
+                a = prompt('Enter a number and I will add 7 to it');
+                
+                if (a != Number(a)) {
+                    alert('Please, enter a valid number');
+                } else {                
+                console.log(Number(a) + 7);
+                }
+            }
+
+            //Multiply positive integer
+
+            function multiply(x, y) {
+                x = prompt('Enter your first number');
+                y = prompt('Enter your second number');
+
+                if ((x && y != Number(x, y)) || (x && y < 0)) {
+                    alert('Please, enter a positive integer')
+                } else {
+                let result = x * y;
+                console.log(result)
+                }
+            }
+
+            //Capitalize
+
+            function capitalize(me) {
+                me = prompt('Enter a word to capitalize/fix mixed capitalization.')
+                console.log(me[0].toUpperCase() + me.slice(1).toLowerCase(length));
+            }
+
+            //Last letter
+
+            let lastLetter = function(ab) {
+                // let lastLet = ab.slice(-1)
+                // console.log(lastLet);
+                ab = prompt('Type a word so I can return its last letter');
+                console.log(ab.slice(-1));
+            }
+
+
+        </script>
+    </body>
+</html>
