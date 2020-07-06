@@ -48,12 +48,12 @@
                 x = prompt('Enter your first number');
                 y = prompt('Enter your second number');
 
-                if ((x && y != Number(x, y)) || (x && y < 0)) {
-                    alert('Please, enter a positive integer')
+                if (Number(x) && Number(y)) {
+                    result = x * y;
                 } else {
-                let result = x * y;
-                console.log(result)
+                    alert('Please enter a valid number')
                 }
+                console.log(result)
             }
 
             //Capitalize
